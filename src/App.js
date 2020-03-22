@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Switch, Route } from 'react-router-dom'
 import classes from './App.module.css';
 import ContactForm from './components/ContactForm/ContactForm';
@@ -13,6 +13,16 @@ const App = () => {
   const [language, setLanguage] = useState('en')
 
   console.log(language)
+
+  useEffect(() => {
+    fetch('https://ipapi.co/json')
+      .then(res => res.json())
+      .then(data => {
+        if (data.country === 'PL') {
+          setLanguage('pl')
+        }
+      })
+  }, [])
 
   return (
     <div className={classes.App}>
