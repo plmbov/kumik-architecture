@@ -1,0 +1,73 @@
+.Container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.LogoLink{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    z-index: 10;
+    margin-left: 20px;
+}
+
+.LogoLink img{
+    width: 100%;
+}
+
+.Menu{
+    display: flex;
+    align-items: center;
+}
+
+.Menu button{
+margin: 0 10px;
+}
+
+.LanguageSwitch{
+    position: fixed;
+    bottom: 0;
+}
+
+@media(max-width: 900px){
+    .Container{
+        padding: 0;
+        width: 100;
+    }
+    .Menu{
+                height: 400px;
+                width: 200px;
+        position: absolute;
+        left: calc(50% - 100px);
+        top: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        margin: 0;
+        z-index: 10;
+    }
+}
+
+@media(max-width: 400px){
+    .Menu{
+        height: 300px;
+    }
+}
+
+@media (max-height: 500px){
+.Menu{
+    top: 40%;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.Menu a{
+    margin: 0 10px;
+    max-height: 30px;
+}
+    }

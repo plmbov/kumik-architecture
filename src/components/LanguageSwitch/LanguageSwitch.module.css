@@ -1,0 +1,27 @@
+.LanguageSwitch{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.LanguageSwitch button{
+    font-size: 14px;
+}
+
+@media(max-width: 900px){
+    .LanguageSwitch{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        right: calc(50% - 44.345px);
+        bottom: 30px;
+        background-color: transparent;
+        flex-direction: row;
+    }
+    .LanguageSwitch button{
+        font-size: 25px;
+        margin: 0;
+    }
+}

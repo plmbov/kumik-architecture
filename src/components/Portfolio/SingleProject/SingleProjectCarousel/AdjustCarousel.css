@@ -1,0 +1,31 @@
+
+.carousel .slide {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.carousel .control-next.control-arrow:before {
+    border-left: 16px solid #fff;
+}
+
+.carousel .control-prev.control-arrow:before {
+    border-right: 16px solid #fff;
+}
+
+.carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
+    margin: 0 5px;
+    display: inline-block;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    content: '';
+}
+
+.carousel .control-arrow, .carousel.carousel-slider .control-arrow{
+    opacity: .8;
+}
+
+@media (max-width: 900px){
+    .carousel .carousel-slider{
+    }
+}

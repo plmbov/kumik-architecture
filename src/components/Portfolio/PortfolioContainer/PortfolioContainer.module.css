@@ -1,0 +1,15 @@
+.Container{
+    height: 100%;
+    width: 80%;
+    scrollbar-width: thin;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1) 80%, rgba(0,0,0,0)), linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0));
+    -webkit-mask-size: 100% 51%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: left top, left bottom;
+}
+
+.Projects{
+    width: 100%;
+}

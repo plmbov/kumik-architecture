@@ -1,0 +1,22 @@
+.SingleProject{
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: ease-in .3s;
+}
+
+.SingleProject:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.01);
+}
+
+.SingleProject img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.LazyLoadImage{
+    width: 100%;
+}

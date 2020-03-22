@@ -1,0 +1,43 @@
+.Container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.MainTitle{
+    margin: 0;
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.SubTitle{
+    font-size: 30px;
+    margin: 15px 0 25px 0;
+}
+
+.RedirectToContactButtonContainer button{
+    padding: 6px;
+    border: solid 1px #fff;
+}
+
+.RedirectToContactButtonContainer button:hover{
+background-color: rgba(255, 255, 255, 0.9);
+}
+
+@media(max-width:900px){
+    .MainTitle{
+        font-size: 10vw;
+    }
+    .SubTitle{
+        font-size: 4vw;
+    }
+    
+    .RedirectToContactButtonContainer button{
+        font-size: 4vw;
+    }
+}
