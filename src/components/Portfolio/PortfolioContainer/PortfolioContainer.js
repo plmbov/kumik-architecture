@@ -22,7 +22,6 @@ const PortfolioContainer = () => {
             setDisplayProject(false)
         } else {
             showProjectDetails(document.location.hash.substring(1))
-            console.log('dzial')
         }
     }
 

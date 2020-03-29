@@ -12,8 +12,6 @@ const App = () => {
   const [burgerActive, setBurgerActive] = useState(false)
   const [language, setLanguage] = useState('en')
 
-  console.log(language)
-
   useEffect(() => {
     fetch('https://ipapi.co/json')
       .then(res => res.json())

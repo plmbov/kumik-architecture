@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import classes from './LandingPage.module.css'
-import Button from '../../UI/Button/Button'
 import counterpart from 'counterpart'
 import Translate from 'react-translate-component'
 import en from '../../languages/en'

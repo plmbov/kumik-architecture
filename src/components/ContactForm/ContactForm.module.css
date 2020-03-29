@@ -1,16 +1,16 @@
 .Container{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
+    justify-content: flex-start;
+    height: 90%;
     padding: 0 10px;
     overflow-y: auto;
 }
 
 .Icons{
-    height: calc(20% - 30px);
     display: flex;
     justify-content: space-around;
+    padding-bottom: 30px;
 }
 
 .Icons p{
@@ -38,12 +38,13 @@ margin: 0;
 }
 
 .FormContainer{
-    height: calc(80% - 20px);
+    position: relative;
 }
 
 form{
     height: fit-content;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     font-weight: 400;
     padding: 20px;
@@ -64,11 +65,43 @@ form{
     outline: none;
     caret-color: #fff;
     font-family: 'Raleway', sans-serif;
+    animation-name: autofill;
+}
+
+.Inputs:-webkit-autofill {
+    animation-name: autofill;
+    animation-fill-mode: both;
 }
 
 .SendButton{
     width: 100%;
     border: 1px solid #fff
+}
+
+textarea{
+    min-height: 12vh;
+}
+
+.Recaptcha{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.FormSent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: ease .5s;
 }
 
 @media (max-width: 900px){
@@ -81,16 +114,17 @@ form{
     .Icons{
         flex-direction: column;
         align-items: center;
-        padding: 20px 0;
+        padding-bottom: 20px;
+        margin-bottom: 0;
     }
     .Inputs{
         min-width: 95%;
     }
-    form{
-        margin-bottom: 20px;
-    }
 }
 
-textarea{
-    min-height: 12vh;
+@keyframes autofill {
+    to {
+        color: rgba(245, 245, 245, 0.85);
+        background: inherit;
+    }
 }

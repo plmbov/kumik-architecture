@@ -12,6 +12,8 @@ export default {
     contactForm: {
         yourEmail: 'Adres e-mail:',
         message: 'Wiadomość:',
-        sendButton: 'Wyślij'
+        sendButton: 'Wyślij',
+        messageDelivered: 'Twoja wiadomość została dostarczona.',
+        replySoon: 'Odpowiemy na nią wkrótce.'
     }
 }

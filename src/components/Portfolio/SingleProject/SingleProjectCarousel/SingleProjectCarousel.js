@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import projectsObject from '../../../../assets/projects'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import classes from './SingleProjectCarousel.module.css';
